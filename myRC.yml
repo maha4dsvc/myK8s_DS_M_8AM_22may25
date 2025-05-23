@@ -6,17 +6,15 @@ spec:
    replicas: 3
    selector: 
      app: myjavaapp
-
+    
    template:
      metadata:
        labels:
           app: myjavaapp
-       spec:
+          
+     spec:
        containers:
        - name: myjavacontainer
          image: maha4iac/myonlinebooking:1
          ports:
           - containerPort: 8080
-
-
-        
